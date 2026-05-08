@@ -1,0 +1,22 @@
+{
+  "name": "pagina-web",
+  "version": "1.0.0",
+  "description": "Veterinaria ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://sherieet.github.io/Pagina-web/"
+  },
+  "keywords": [
+    "veterinaria"
+  ],
+  "author": "Sheriet Ramos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidado de Gatos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+
+<header>
+    <div class="logo-container">
+        <img src="imagen.webp" width="200" height="150" style="vertical-align: middle;" alt="Logo">
+    </div>
+    <h1>Cuidado de Gatitos</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="https://aulasvirtuales.santotomas.cl/">Consejos</a></li>
+            <li><a href="#">Horarios de comida</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="heroe">
+        <h2>Amor y cuidado para tu felino</h2>
+        <p>Usamos consejos de expertos para crear gatos felices y saludables.</p>
+    </section>
+
+    <section id="servicios">
+        <h3>Nuestros Consejos</h3>
+        <div class="consejos-container">
+            <article>
+                <h4>🍗 Alimentación saludable</h4>
+                <p>Comida balanceada y agua fresca siempre disponible para tu gato.</p>
+                <a href="https://es.cats.com/guia-de-alimentacion-para-gatos">Más información sobre alimentación felina</a>
+            </article>
+            <article>
+                <h4>🧼 Higiene y arena</h4>
+                <p>Limpieza diaria de la bandeja y cambio de arena semanal.</p>
+                <a href="https://es.cats.com/cuidado-de-gatos-para-principiantes">Ver consejos de limpieza</a>
+            </article>
+            <article>
+                <h4>🏥 Visitas al veterinario</h4>
+                <p>Vacunas y chequeos anuales para mantener a tu gato sano.</p>
+                <a href="https://clinicaveterinariaestivet.com/2023/11/23/como-preparar-mascota-vistia-veterinario/">Tips para preparar a tu mascota para ir al veterinario</a>
+            </article>
+        </div>
+    </section>
+
+    <div class="gif-container">
+        <a href="https://portal.santotomas.cl/">
+            <img src="sanrio.gif" alt="Gatito animado">
+        </a>
+    </div>
+
+    <section id="contacto">
+        <h2>Si desea más consejos para su gato, ¡llene los siguientes campos y te enviaremos una guía gratis!</h2>
+
+        <form action="/enviar" method="POST">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre" required>
+            </div>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Introduzca su apellido" required>
+            </div>
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Introduzca su correo" required>
+            </div>
+            <div>
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" placeholder="Tu duda y/o queja aquí"></textarea>
+            </div>
+
+            <button class="button-8" type="submit" role="button">Enviar al Servidor</button>
+        </form>
+    </section>
+
+    <aside>
+        <h5>📱 ¡Nuestras redes sociales!</h5>
+        <div><a href="https://www.instagram.com/">Instagram 📸</a></div>
+        <div><a href="https://www.facebook.com/">Facebook 🐱</a></div>
+        <div><a href="https://www.tiktok.com/">TikTok 🐾</a></div>
+
+        <h4>Noticias Recientes</h4>
+        <p>🎉 ¡Lanzamos nuestra guía de cuidados esenciales para gatos! 🎉</p>
+    </aside>
+</main>
+
+<footer>
+    <p>Contacto: cuidadores@michis.cl | Tel: +56 9 1234 5678</p>
+    <p>&copy; 2026 - Cuidado de Gatos - IP Santo Tomás</p>
+</footer>
+
+</body>
+
+</html>

@@ -17,6 +17,7 @@
   "author": "Sheriet Ramos",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.7",
     "express": "^5.2.1"
   }
 }

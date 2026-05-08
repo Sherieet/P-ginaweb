@@ -138,51 +138,64 @@ form {
     background: none;
     border-radius: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 600px;
 }
 
 form div {
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 label {
-    display: inline-block;
-    width: 180px;
     font-weight: bold;
     color: #6b3f88;
+    font-size: 15px;
 }
 
 input, textarea {
-    padding: 8px;
-    width: 250px;
-    border-radius: 5px;
-    border: 1px solid #d4a8e8;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 2px solid #d4a8e8;
     background-color: #fdf5ff;
     color: #4a2e60;
     font-family: var(--fuente-principal);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #9b6bb5;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(155, 107, 181, 0.1);
 }
 
 textarea {
-    width: 250px;
-    height: 80px;
+    height: 120px;
     resize: vertical;
 }
 
 .button-8 {
     background-color: var(--color-boton);
-    border-radius: 6px;
-    border: 1px solid #d4a8e8;
-    box-shadow: rgba(180, 100, 200, 0.4) 0 1px 0 0 inset;
+    border-radius: 8px;
+    border: 2px solid #d4a8e8;
+    box-shadow: rgba(180, 100, 200, 0.3) 0 4px 8px;
     box-sizing: border-box;
     color: #7a3d96;
     cursor: pointer;
     display: inline-block;
-    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
-    font-size: 14px;
+    font-family: var(--fuente-principal);
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.15385;
     margin: 0;
     outline: none;
-    padding: 9px 1.5em;
+    padding: 12px 32px;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -191,12 +204,19 @@ textarea {
     touch-action: manipulation;
     vertical-align: baseline;
     white-space: nowrap;
+    transition: all 0.3s ease;
 }
 
-.button-8:hover,
-.button-8:focus {
+.button-8:hover {
     background-color: var(--color-boton-hover);
     color: #4a1a6b;
+    box-shadow: rgba(180, 100, 200, 0.5) 0 6px 12px;
+    transform: translateY(-2px);
+}
+
+.button-8:focus {
+    outline: none;
+    box-shadow: rgba(155, 107, 181, 0.4) 0 0 0 3px;
 }
 
 .button-8:focus {
